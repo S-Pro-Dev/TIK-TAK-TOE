@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(315deg, #40c057 5%, #9775fa 95%);
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+main {
+  padding-top: 8vmin;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: monospace;
+  opacity: 0.5;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  gap: 1.55vmin;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.55vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(19, 17, 17, 0.318);
+  font-size: 8vmin;
+  color: #513987;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(315deg, #be4bdb67 5%, #9675fa67 95%);
+}
+
+.reset {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background: linear-gradient(315deg, #7853e8b3 5%, #de68e0be 95%);
+  color: aliceblue;
+  border-radius: 1rem;
+  border: none;
+}
+
+#newBtn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background: linear-gradient(315deg, #7950f2 5%, #f783eaab 95%);
+  color: aliceblue;
+  border-radius: 1rem;
+  border: none;
+}
+
+#msg {
+  color: white;
+  font-size: 8vmin;
+  font-family: cursive;
+}
+
+.msg-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  z-index: 999;
+  bottom: 35vmin;
+}
+
+.msg-container.hide {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.blur {
+  filter: blur(1px);
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    height: 71vh;
+  }
+
+  .game {
+    height: 74vmin;
+    width: 72vmin;
+  }
+
+  .box {
+    height: 22vmin;
+    width: 22vmin;
+  }
+
+  .reset {
+    padding: 0.5rem;
+    font-size: 1.11rem;
+  }
+
+  .msg-container {
+    bottom: 94vmin;
+  }
+}
